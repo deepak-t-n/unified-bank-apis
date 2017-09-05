@@ -1,8 +1,8 @@
-Q:\Deepak\Development\Hackathon\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\models\ContactDetails.java
-Q:\Deepak\Development\Hackathon\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\controllers\Psd2CustomerAPIController.java
-Q:\Deepak\Development\Hackathon\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\Application.java
-Q:\Deepak\Development\Hackathon\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\models\Customer.java
-Q:\Deepak\Development\Hackathon\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\controllers\Psd2AccountAPIController.java
-Q:\Deepak\Development\Hackathon\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\models\Payment.java
-Q:\Deepak\Development\Hackathon\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\controllers\Psd2PaymentAPIController.java
-Q:\Deepak\Development\Hackathon\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\models\AccountInfo.java
+Q:\git\ubp-teamp\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\controllers\Psd2AccountAPIController.java
+Q:\git\ubp-teamp\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\controllers\Psd2PaymentAPIController.java
+Q:\git\ubp-teamp\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\models\ContactDetails.java
+Q:\git\ubp-teamp\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\models\AccountInfo.java
+Q:\git\ubp-teamp\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\Application.java
+Q:\git\ubp-teamp\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\models\Payment.java
+Q:\git\ubp-teamp\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\models\Customer.java
+Q:\git\ubp-teamp\org.dnb.tcs.hackathon.bankb.apis\src\main\java\org\dnb\tcs\hackathon\bankb\apis\controllers\Psd2CustomerAPIController.java
