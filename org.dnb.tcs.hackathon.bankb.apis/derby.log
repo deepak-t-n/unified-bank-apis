@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Sep 03 19:08:44 CEST 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015e-48b7-48cf-000006caaa80 
+on database directory memory:/media/deepam/Data/EclipseWrkSpace/org.dnb.tcs.hackathon.bankb.apis/testdb with class loader sun.misc.Launcher$AppClassLoader@75b84c92 
+Loaded from file:/home/deepam/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_131-8u131-b11-2ubuntu1.16.04.3-b11
+user.dir=/media/deepam/Data/EclipseWrkSpace/org.dnb.tcs.hackathon.bankb.apis
+os.name=Linux
+os.arch=amd64
+os.version=4.4.0-93-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

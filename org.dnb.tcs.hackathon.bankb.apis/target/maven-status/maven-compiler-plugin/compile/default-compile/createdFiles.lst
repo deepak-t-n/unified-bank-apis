@@ -1,0 +1,8 @@
+org\dnb\tcs\hackathon\bankb\apis\controllers\Psd2AccountAPIController.class
+org\dnb\tcs\hackathon\bankb\apis\Application.class
+org\dnb\tcs\hackathon\bankb\apis\models\Payment.class
+org\dnb\tcs\hackathon\bankb\apis\controllers\Psd2CustomerAPIController.class
+org\dnb\tcs\hackathon\bankb\apis\models\ContactDetails.class
+org\dnb\tcs\hackathon\bankb\apis\controllers\Psd2PaymentAPIController.class
+org\dnb\tcs\hackathon\bankb\apis\models\AccountInfo.class
+org\dnb\tcs\hackathon\bankb\apis\models\Customer.class
