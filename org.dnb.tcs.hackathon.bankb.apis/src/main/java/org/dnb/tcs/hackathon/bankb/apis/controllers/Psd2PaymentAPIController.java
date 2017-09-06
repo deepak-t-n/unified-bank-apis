@@ -15,12 +15,12 @@ public class Psd2PaymentAPIController {
 	private static final Logger logger = LogManager.getLogger(Psd2PaymentAPIController.class);
 	
 	@RequestMapping(method = RequestMethod.GET, path="/bankb/payments/paymentId/{paymentId}", produces = "application/json")
-	public Payment getCustomerInfo(@PathVariable("paymentId") Integer paymentId){
+	public Payment getCustomerInfo(@PathVariable("paymentId") Long paymentId){
 		logger.info("Fetching payment Information for " + paymentId);
 		
 		Payment payment = Application.getPayment(paymentId);
 		
-		logger.info("Returing Customer Information for " + payment);
+		logger.info("Returing payment Information for " + payment);
 		
 		return payment;
 	}

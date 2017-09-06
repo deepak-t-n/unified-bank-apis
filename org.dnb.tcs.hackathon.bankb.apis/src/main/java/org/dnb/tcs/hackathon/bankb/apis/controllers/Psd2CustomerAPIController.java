@@ -15,7 +15,7 @@ public class Psd2CustomerAPIController {
 	private static final Logger logger = LogManager.getLogger(Psd2CustomerAPIController.class);
 	
 	@RequestMapping(method = RequestMethod.GET, path="/bankb/customer/id/{id}", produces = "application/json")
-	public Customer getCustomerInfo(@PathVariable("id") Integer id){
+	public Customer getCustomerInfo(@PathVariable("id") String id){
 		logger.info("Fetching Customer Information for " + id);
 		
 		Customer customer = Application.getCustomer(id);

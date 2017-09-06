@@ -6,7 +6,7 @@ import java.util.List;
 public class Customer {
 	
 	private String customerName;
-	private Integer personalId;
+	private String personalId;
 	private String idType;
 	private Date dob;
 	private String gender;
@@ -14,7 +14,7 @@ public class Customer {
 	private ContactDetails contactDetails;
 	private List<AccountInfo> accs;
 	
-	public Customer(String customerName, Integer personalId){
+	public Customer(String customerName, String personalId){
 		this.customerName = customerName;
 		this.personalId = personalId;
 	}
@@ -25,10 +25,10 @@ public class Customer {
 	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
 	}
-	public Integer getPersonalId() {
+	public String getPersonalId() {
 		return personalId;
 	}
-	public void setPersonalId(Integer personalId) {
+	public void setPersonalId(String personalId) {
 		this.personalId = personalId;
 	}
 

@@ -16,8 +16,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Application {
 
-	public static Map<Integer, Customer> bankBCustomers = new HashMap<Integer, Customer>();
-	public static Map<Integer,Payment> payments = new HashMap<Integer,Payment>();
+	public static Map<String, Customer> bankBCustomers = new HashMap<String, Customer>();
+	public static Map<Long,Payment> payments = new HashMap<Long,Payment>();
 
 	public static void main(String[] args) throws Exception {
 
@@ -27,17 +27,17 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
-	public static Customer getCustomer(Integer personalId) {
+	public static Customer getCustomer(String personalId) {
 
 		return bankBCustomers.get(personalId);
 	}
 	
-	public static List<AccountInfo> getAccountInfo(Integer customerId){
+	public static List<AccountInfo> getAccountInfo(String customerId){
 		
 		return getCustomer(customerId).getAccs();
 	}
 	
-	public static Payment getPayment(Integer paymentId){
+	public static Payment getPayment(Long paymentId){
 		return payments.get(paymentId);
 	}
 	
@@ -52,13 +52,17 @@ public class Application {
 			payment.setPaymentId(1000+i);
 			payment.setTxnMsg("Payment " +i);
 
+			System.out.println("payment.getPaymentId() = " + payment.getPaymentId());
 			payments.put(payment.getPaymentId(), payment);
 		}
 	}
 	
 	private static void loadCustomers() {
-		for (int i = 0; i < 3; i++) {
-			Customer customer = new Customer(i + "- Customer", i);
+		
+		String[] values = {"19078984062","09077675402","02079158658"};
+		String[] accsArr = {"12083092405","12083082828","12083012444"};
+		for (int i = 0; i < values.length; i++) {
+			Customer customer = new Customer(i + "- Customer", values[i]);
 			ContactDetails contactDetails = new ContactDetails();
 			AccountInfo accountInfo = new AccountInfo();
 			List<AccountInfo> accs = new ArrayList<AccountInfo>();
@@ -74,14 +78,14 @@ public class Application {
 			contactDetails.setPostalCode("019"+i);
 			contactDetails.setPhone(90000000+i);
 			
-			accountInfo.setCustomerId(i);
-			accountInfo.setAccountNumber(100000000+i);
+			accountInfo.setCustomerId(values[i]);
+			accountInfo.setAccountNumber(accsArr[i]);
 			accs.add(accountInfo);
 			
 			customer.setAccs(accs);
 			customer.setContactDetails(contactDetails);
 			
-			bankBCustomers.put(i, customer);
+			bankBCustomers.put(values[i], customer);
 		}
 	}
 }
