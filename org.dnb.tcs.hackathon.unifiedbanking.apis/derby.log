@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Tue Sep 05 17:22:53 CEST 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015e-52a3-15db-00000a9946d0 
-on database directory memory:Q:\Deepak\Development\Hackathon\org.dnb.tcs.hackathon.unifiedbanking.apis\testdb with class loader sun.misc.Launcher$AppClassLoader@4e0e2f2a 
-Loaded from file:/C:/utv/m2repo/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
+Wed Sep 06 15:15:06 CEST 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015e-5754-761d-0000065750b0 
+on database directory memory:/home/deepam/git/unified-bank-apis/org.dnb.tcs.hackathon.unifiedbanking.apis/testdb with class loader sun.misc.Launcher$AppClassLoader@75b84c92 
+Loaded from file:/home/deepam/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_65-b17
-user.dir=Q:\Deepak\Development\Hackathon\org.dnb.tcs.hackathon.unifiedbanking.apis
-os.name=Windows 7
+java.runtime.version=1.8.0_131-8u131-b11-2ubuntu1.16.04.3-b11
+user.dir=/home/deepam/git/unified-bank-apis/org.dnb.tcs.hackathon.unifiedbanking.apis
+os.name=Linux
 os.arch=amd64
-os.version=6.1
+os.version=4.4.0-93-generic
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''

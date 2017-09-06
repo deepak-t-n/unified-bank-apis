@@ -2,50 +2,85 @@ package org.dnb.tcs.hackathon.unifiedbanking.mediator.models;
 
 public class PaymentMediator {
 
-	private Integer paymentId;
-	private Integer beneficiaryAcc;
-	private Integer payerAcc;
+	private Long paymentId;
+	private Long beneficiaryAcc;
+	private Long payerAcc;
 	private String txnMsg;
 	private Integer amt;
-	private Integer customerId;
+	private Long customerId;
 	
-	public Integer getPaymentId() {
+	public Long getPaymentId() {
 		return paymentId;
 	}
-	public void setPaymentId(Integer paymentId) {
+
+
+
+	public void setPaymentId(Long paymentId) {
 		this.paymentId = paymentId;
 	}
-	public Integer getBeneficiaryAcc() {
+
+
+
+	public Long getBeneficiaryAcc() {
 		return beneficiaryAcc;
 	}
-	public void setBeneficiaryAcc(Integer beneficiaryAcc) {
+
+
+
+	public void setBeneficiaryAcc(Long beneficiaryAcc) {
 		this.beneficiaryAcc = beneficiaryAcc;
 	}
-	public Integer getPayerAcc() {
+
+
+
+	public Long getPayerAcc() {
 		return payerAcc;
 	}
-	public void setPayerAcc(Integer payerAcc) {
+
+
+
+	public void setPayerAcc(Long payerAcc) {
 		this.payerAcc = payerAcc;
 	}
+
+
+
 	public String getTxnMsg() {
 		return txnMsg;
 	}
+
+
+
 	public void setTxnMsg(String txnMsg) {
 		this.txnMsg = txnMsg;
 	}
+
+
+
 	public Integer getAmt() {
 		return amt;
 	}
+
+
+
 	public void setAmt(Integer amt) {
 		this.amt = amt;
 	}
-	public Integer getCustomerId() {
+
+
+
+	public Long getCustomerId() {
 		return customerId;
 	}
-	public void setCustomerId(Integer customerId) {
+
+
+
+	public void setCustomerId(Long customerId) {
 		this.customerId = customerId;
 	}
-	
+
+
+
 	@Override
 	public String toString() {
 		return String.format("Payment [paymentId=%s, beneficiaryAcc=%s, payerAcc=%s, txnMsg=%s, amt=%s, customerId=%s]",

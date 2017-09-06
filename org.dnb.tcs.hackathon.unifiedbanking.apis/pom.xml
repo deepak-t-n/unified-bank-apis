@@ -4,6 +4,7 @@
   <groupId>org.dnb.tcs.hackathon.unifiedbanking</groupId>
   <artifactId>org.dnb.tcs.hackathon.unifiedbanking.apis</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
   
   <name>org.dnb.tcs.hackathon.unifiedbanking</name>
   
@@ -54,8 +55,14 @@
 			<artifactId>log4j-core</artifactId>
 			<version>2.1</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>1.8</version>
+		</dependency>
 	</dependencies>
-	
+	 
 	<build>
 
 		<finalName>ubp-apis</finalName>
