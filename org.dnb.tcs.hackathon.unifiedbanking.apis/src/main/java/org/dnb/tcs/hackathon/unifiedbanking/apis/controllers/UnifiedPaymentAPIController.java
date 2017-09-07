@@ -45,7 +45,7 @@ public class UnifiedPaymentAPIController {
 		try {
 			
 			WebResource webResource = client.resource(endPointUrl);
-			ClientResponse response = webResource.accept("application/json").header("Authorization", "Bearer cb456f4e-c563-3cd2-8017-109e4bbc630e").get(ClientResponse.class);
+			ClientResponse response = webResource.accept("application/json").header("Authorization",Constants.accessKey).get(ClientResponse.class);
 									
 			if ((response.getStatus() >= 203)){
 				throw new RuntimeException("Failed : HTTP error code : "

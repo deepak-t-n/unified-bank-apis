@@ -1,6 +1,6 @@
 
 ## Run the image
-sudo docker run -p 8080:8080 bankb-apis > BankB/bankb.logs &
+sudo docker run --network="host" bankb-apis > bankb.logs &
 
 ## Show the IP address of the docker (if it requires to be enabled in firewall / iptables)
 sudo ip addr show docker0

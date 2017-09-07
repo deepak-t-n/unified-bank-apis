@@ -53,7 +53,7 @@ public class UnifiedAccountsAPIController {
 			WebResource dnbWebResource = clientDnb.resource(dnbEndPoint);
 			
 			logger.info("Calling the DnB end point" + dnbEndPoint);
-			ClientResponse dnbResponse = dnbWebResource.accept("application/json").header("Authorization", "Bearer cb456f4e-c563-3cd2-8017-109e4bbc630e").get(ClientResponse.class);
+			ClientResponse dnbResponse = dnbWebResource.accept("application/json").header("Authorization", Constants.accessKey).get(ClientResponse.class);
 									
 			if ((dnbResponse.getStatus() >= 203)){
 				throw new RuntimeException("dnbResponse Failed : HTTP error code : "
