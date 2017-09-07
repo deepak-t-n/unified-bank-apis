@@ -6,17 +6,17 @@ import java.util.List;
 public class Customer {
 	
 	private String customerName;
-	private Integer personalId;
+	private String customerID;
 	private String idType;
 	private Date dob;
 	private String gender;
 	private String nationality;
 	private ContactDetails contactDetails;
-	private List<AccountInfo> accs;
+	private List<Account> accs;
 	
-	public Customer(String customerName, Integer personalId){
+	public Customer(String customerName, String customerID){
 		this.customerName = customerName;
-		this.personalId = personalId;
+		this.customerID = customerID;
 	}
 	
 	public String getCustomerName() {
@@ -25,11 +25,11 @@ public class Customer {
 	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
 	}
-	public Integer getPersonalId() {
-		return personalId;
+	public String getCustomerID() {
+		return customerID;
 	}
-	public void setPersonalId(Integer personalId) {
-		this.personalId = personalId;
+	public void setCustomerID(String customerID) {
+		this.customerID = customerID;
 	}
 
 	public String getIdType() {
@@ -72,19 +72,19 @@ public class Customer {
 		this.contactDetails = contactDetails;
 	}
 
-	public List<AccountInfo> getAccs() {
+	public List<Account> getAccs() {
 		return accs;
 	}
 
-	public void setAccs(List<AccountInfo> accs) {
+	public void setAccs(List<Account> accs) {
 		this.accs = accs;
 	}
 
 	@Override
 	public String toString() {
 		return String.format(
-				"Customer [customerName=%s, personalId=%s, idType=%s, dob=%s, gender=%s, nationality=%s, contactDetails=%s, accs=%s]",
-				customerName, personalId, idType, dob, gender, nationality, contactDetails, accs);
+				"Customer [customerName=%s, customerID=%s, idType=%s, dob=%s, gender=%s, nationality=%s, contactDetails=%s, accs=%s]",
+				customerName, customerID, idType, dob, gender, nationality, contactDetails, accs);
 	}
 
 	

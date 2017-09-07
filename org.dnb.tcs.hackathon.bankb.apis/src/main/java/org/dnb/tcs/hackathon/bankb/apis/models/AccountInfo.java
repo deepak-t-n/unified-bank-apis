@@ -5,6 +5,7 @@ public class AccountInfo {
 	private String customerId;
 	private String accountNumber;
 	private Integer balanceAmt;
+	private BankInfo bankInfo;
 	
 	public String getCustomerId() {
 		return customerId;
@@ -23,6 +24,18 @@ public class AccountInfo {
 	}
 	public void setBalanceAmt(Integer balanceAmt) {
 		this.balanceAmt = balanceAmt;
+	}
+	public BankInfo getBankInfo() {
+		return bankInfo;
+	}
+	public void setBankInfo(BankInfo bankInfo) {
+		this.bankInfo = bankInfo;
+	}
+	
+	@Override
+	public String toString() {
+		return "AccountInfo [customerId=" + customerId + ", accountNumber=" + accountNumber + ", balanceAmt="
+				+ balanceAmt + ", bankInfo=" + bankInfo + "]";
 	}
 	
 }

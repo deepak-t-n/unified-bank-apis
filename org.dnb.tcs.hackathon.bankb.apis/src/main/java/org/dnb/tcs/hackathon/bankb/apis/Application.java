@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.dnb.tcs.hackathon.bankb.apis.models.AccountInfo;
+import org.dnb.tcs.hackathon.bankb.apis.models.BankInfo;
 import org.dnb.tcs.hackathon.bankb.apis.models.ContactDetails;
 import org.dnb.tcs.hackathon.bankb.apis.models.Customer;
 import org.dnb.tcs.hackathon.bankb.apis.models.Payment;
@@ -52,7 +53,7 @@ public class Application {
 			payment.setPaymentId(1000+i);
 			payment.setTxnMsg("Payment " +i);
 
-			System.out.println("payment.getPaymentId() = " + payment.getPaymentId());
+			
 			payments.put(payment.getPaymentId(), payment);
 		}
 	}
@@ -60,7 +61,7 @@ public class Application {
 	private static void loadCustomers() {
 		
 		String[] values = {"19078984062","09077675402","02079158658"};
-		String[] accsArr = {"12083092405","12083082828","12083012444"};
+		String[] accsArr = {"10000000001","10000000002","10000000003"};
 		for (int i = 0; i < values.length; i++) {
 			Customer customer = new Customer(i + "- Customer", values[i]);
 			ContactDetails contactDetails = new ContactDetails();
@@ -80,6 +81,8 @@ public class Application {
 			
 			accountInfo.setCustomerId(values[i]);
 			accountInfo.setAccountNumber(accsArr[i]);
+			accountInfo.setBankInfo(new BankInfo());
+			accountInfo.setBalanceAmt(1010 + i);
 			accs.add(accountInfo);
 			
 			customer.setAccs(accs);
