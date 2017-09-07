@@ -1,6 +1,6 @@
 
 ## Run the image
-sudo docker run --network="host" ubp-apis
+sudo docker run -p 8090:8090 ubp-apis > udp-api.logs &
 
 ## Show the IP address of the docker (if it requires to be enabled in firewall / iptables)
 sudo ip addr show docker0
@@ -12,7 +12,7 @@ sudo docker ps
 sudo docker stop {container-id}
 
 ## Running the application without docker
-java -jar ubp-apis.jar.jar
+java -jar ubp-apis.jar
 
 ## Packing using maven
 mvn package
@@ -21,4 +21,4 @@ mvn package
 sudo mvn -e docker:build
 
 ## Building the image using docker command
-sudo docker build -t ubp-apis/1 .
+sudo docker build -t ubp-apis .

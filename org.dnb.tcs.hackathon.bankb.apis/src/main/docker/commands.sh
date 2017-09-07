@@ -1,6 +1,6 @@
 
 ## Run the image
-sudo docker run --network="host" bankb-apis
+sudo docker run -p 8080:8080 bankb-apis > BankB/bankb.logs &
 
 ## Show the IP address of the docker (if it requires to be enabled in firewall / iptables)
 sudo ip addr show docker0
@@ -21,4 +21,4 @@ mvn package
 sudo mvn -e docker:build
 
 ## Building the image using docker command
-sudo docker build -t bankb-apis/1 .
+sudo docker build -t bankb-apis .

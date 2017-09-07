@@ -1,6 +1,7 @@
 /home/deepam/git/unified-bank-apis/org.dnb.tcs.hackathon.bankb.apis/src/main/java/org/dnb/tcs/hackathon/bankb/apis/models/Customer.java
 /home/deepam/git/unified-bank-apis/org.dnb.tcs.hackathon.bankb.apis/src/main/java/org/dnb/tcs/hackathon/bankb/apis/controllers/Psd2AccountAPIController.java
 /home/deepam/git/unified-bank-apis/org.dnb.tcs.hackathon.bankb.apis/src/main/java/org/dnb/tcs/hackathon/bankb/apis/controllers/Psd2PaymentAPIController.java
+/home/deepam/git/unified-bank-apis/org.dnb.tcs.hackathon.bankb.apis/src/main/java/org/dnb/tcs/hackathon/bankb/apis/models/BankInfo.java
 /home/deepam/git/unified-bank-apis/org.dnb.tcs.hackathon.bankb.apis/src/main/java/org/dnb/tcs/hackathon/bankb/apis/models/ContactDetails.java
 /home/deepam/git/unified-bank-apis/org.dnb.tcs.hackathon.bankb.apis/src/main/java/org/dnb/tcs/hackathon/bankb/apis/controllers/Psd2CustomerAPIController.java
 /home/deepam/git/unified-bank-apis/org.dnb.tcs.hackathon.bankb.apis/src/main/java/org/dnb/tcs/hackathon/bankb/apis/models/Payment.java
